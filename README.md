@@ -23,3 +23,24 @@
 - which ai agents would you like to configure?
 -- github copilot, antigravity
 - 
+
+install laravel in another directory
+laravel new laravel_13 --no-interaction
+move files from that directory to parent directory
+cd laravel_13
+mv /var/www/html/laravel_13/vendor/* /var/www/html/vendor/
+rm -rf vendor
+mv /var/www/html/laravel_13/* /var/www/html/
+
+
+
+
+
+
+npm install --ignore-scripts && npm run build
+composer run dev
+
+
+mysql -h shared_mysql80 -u root -p -P 3306
+cd laravel_13
+composer run dev

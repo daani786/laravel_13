@@ -9,6 +9,10 @@ services:
     volumes:
       # Mount your actual PHP code here
       - ./code:/var/www/html
+      - laravel-node-modules:/var/www/html/node_modules
+      - laravel-vendor:/var/www/html/vendor
+      # - /var/www/html/vendor
+      # - /var/www/html/node_modules
       - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       # Nginx-proxy reads this to route traffic
@@ -19,3 +23,7 @@ services:
 networks:
   web_proxy:
     external: true
+
+volumes:
+  laravel-node-modules:
+  laravel-vendor:
