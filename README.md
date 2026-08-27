@@ -1,0 +1,4 @@
+- run "docker compose up -d"
+- add following line in hosts file
+- 127.0.0.0 laravel_13.local
+- if docker is installed in a vm use its ip
