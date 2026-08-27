@@ -8,7 +8,7 @@ services:
       dockerfile: ./Dockerfile  # Path to the specific file
     volumes:
       # Mount your actual PHP code here
-      - ./:/var/www/html
+      - ./code:/var/www/html
       - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       # Nginx-proxy reads this to route traffic

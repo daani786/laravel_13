@@ -2,3 +2,24 @@
 - add following line in hosts file
 - 127.0.0.0 laravel_13.local
 - if docker is installed in a vm use its ip
+
+- open docker container console and run the following command to install laravel installer
+-- composer global require laravel/installer
+-- export PATH="$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin:$PATH"
+- create a folder code, otherwise laravel installer will says folder is not empty
+- you can move files from code folder to out if you want after laravel installation
+-- laravel new laravel_13
+- it will asks some questions
+- Do you want to use a starter Kit?
+-- no
+- Which front end stack do you want to build on?
+- Blade
+- let it install the project
+- which boost features would you like to configure?
+-- AI Guidelines, Agent Skills, Boost MCP Server Configuration
+-- select all three for default behavior
+- which integration would you like to configure for boost
+-- Laravel Cloud, select none
+- which ai agents would you like to configure?
+-- github copilot, antigravity
+- 
