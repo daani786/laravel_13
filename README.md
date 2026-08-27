@@ -36,8 +36,9 @@ mv /var/www/html/laravel_13/* /var/www/html/
 
 
 
-
-npm install --ignore-scripts && npm run build
+npm install
+<!-- npm install --ignore-scripts -->
+npm run build
 composer run dev
 
 
