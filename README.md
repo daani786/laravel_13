@@ -45,3 +45,12 @@ composer run dev
 mysql -h shared_mysql80 -u root -p -P 3306
 cd laravel_13
 composer run dev
+
+
+
+to create controller
+- php artisan make:controller ChirpController
+- php artisan make:controller ChirpController --resource
+- php artisan migrate
+- php artisan migrate:fresh
+- php artisan migrate:fresh --seed
