@@ -53,4 +53,6 @@ to create controller
 - php artisan make:controller ChirpController --resource
 - php artisan migrate
 - php artisan migrate:fresh
-- php artisan migrate:fresh --seed
+<!-- - php artisan migrate:fresh --seed -->
+- php artisan make:model Chirp
+<!-- - php artisan make:model Chirp -mrc -->
