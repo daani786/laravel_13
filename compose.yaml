@@ -1,0 +1,21 @@
+services:
+  laravel_13:
+    # Use an image with Apache and PHP pre-installed
+    # image: php:8.3-apache
+    container_name: laravel_13
+    build:
+      context: . # Root of the build (where to find files to COPY)
+      dockerfile: ./Dockerfile  # Path to the specific file
+    volumes:
+      # Mount your actual PHP code here
+      - ./:/var/www/html
+      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+    environment:
+      # Nginx-proxy reads this to route traffic
+      - VIRTUAL_HOST=laravel_13.local
+    networks:
+      - web_proxy
+
+networks:
+  web_proxy:
+    external: true

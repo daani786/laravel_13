@@ -4,3 +4,6 @@ docker-compose.yml
 
 # Exclude the Dockerfile itself
 Dockerfile
+
+# Exclude apache config file
+000-default.conf
