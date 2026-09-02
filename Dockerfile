@@ -27,3 +27,9 @@ RUN composer global require laravel/installer
 RUN export PATH="$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin:$PATH"
 
 RUN a2ensite 000-default.conf
+
+# Set terminal environment variable
+ENV TERM=xterm-256color
+
+# Add the alias permanently to the system-wide bash configuration
+RUN echo "alias ls='ls --color=auto'" >> /etc/bash.bashrc

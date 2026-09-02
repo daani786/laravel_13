@@ -53,6 +53,14 @@ to create controller
 - php artisan make:controller ChirpController --resource
 - php artisan migrate
 - php artisan migrate:fresh
-<!-- - php artisan migrate:fresh --seed -->
+- to make seed work allow permission to database folder and database file
+-- chmod 775 database/database.sqlite
+-- chmod 775 database
+-- php artisan migrate:fresh --seed //to remove all tables, create them fresh and populate data
+- php artisan migrate:rollback //to revert last migration
+- php artisan make:migration
+- php artisan tinker
+-- \DB::select('SELECT * from chirps');
+-- \DB::table('chirps')->get();
 - php artisan make:model Chirp
 <!-- - php artisan make:model Chirp -mrc -->
