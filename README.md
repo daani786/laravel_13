@@ -64,3 +64,6 @@ to create controller
 -- \DB::table('chirps')->get();
 - php artisan make:model Chirp
 <!-- - php artisan make:model Chirp -mrc -->
+- php artisan make:seeder ChirpSeeder
+- php artisan db:seed --class=ChirpSeeder
+- npm run build // to update build css after change in app.css
