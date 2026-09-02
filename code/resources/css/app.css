@@ -116,6 +116,10 @@ html[data-theme="laravelChirper"],
     padding: .625rem .75rem;
 }
 
+:where(.textarea).textarea-error {
+    border-color: var(--color-error, #d9534f);
+}
+
 /* inside cards, a hair tighter */
 .card :where(.textarea) {
     padding: .5625rem .75rem;
