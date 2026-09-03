@@ -71,3 +71,13 @@ to create controller
 -- name = ChirpPolicy
 -- model = Chirp
 <!-- php artisan make:policy ChirpPolicy --model=Chirp -->
+- for auth
+- php artisan make:controller
+-- name = Auth/Register 
+-- type = Invokable
+<!-- php artisan make:controller Auth/Register --invokable -->
+- php artisan make:controller
+-- name = Auth/Logout
+-- type = Invokable
+php artisan make:controller Auth/Login --invokable
+<!-- php artisan make:controller Auth/Logout --invokable -->
