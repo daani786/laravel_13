@@ -67,3 +67,7 @@ to create controller
 - php artisan make:seeder ChirpSeeder
 - php artisan db:seed --class=ChirpSeeder
 - npm run build // to update build css after change in app.css
+- php artisan make:policy
+-- name = ChirpPolicy
+-- model = Chirp
+<!-- php artisan make:policy ChirpPolicy --model=Chirp -->
