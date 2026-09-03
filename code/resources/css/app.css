@@ -196,7 +196,6 @@ a:hover {
     font-size: .75rem;
 }
 
-
 /* Toast-only success color */
 :where(.toast) {
     --color-success: #598b6e;
@@ -210,7 +209,6 @@ a:hover {
     border: var(--border) solid rgba(0, 0, 0, 0.08);
 }
 
-/* “link-primary” utility should be Laravel red, not Tailwind blue */
 :where(.link-primary) {
     color: var(--color-primary) !important;
 }
@@ -220,7 +218,7 @@ a:hover {
 }
 
 /* Timestamps / separators (like your `·` and “ago”) */
-.text-base-content\/60 {
+.text-base-content\\/60 {
     color: var(--text-10) !important;
 }
 
@@ -229,7 +227,6 @@ footer.footer {
     background: var(--color-base-200);
     color: var(--text-10);
 }
-
 
 /* 1) Links shouldn't style buttons (fixes blue anchor-buttons) */
 a:not(.btn) {
@@ -271,7 +268,7 @@ a.btn-ghost:hover {
     width: 100%;
 }
 
-/* 3) Slightly rounder cards & fields (closer to Community) */
+/* 3) Slightly rounder cards & fields*/
 :root:has(input.theme-controller[value=laravelChirper]:checked),
 [data-theme="laravelChirper"] {
     --radius-box: 10px;
@@ -286,7 +283,6 @@ a.btn-ghost:hover {
 .card {
     border-radius: var(--radius-box) !important;
 }
-
 
 h1,
 h2,
